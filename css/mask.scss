@@ -1,0 +1,109 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.wrap{
+    position: relative;
+    width:100%;
+    height:100%;
+}
+.menu{
+    position: absolute;
+    width:30%;
+    z-index:999;
+    height:100%;
+    left: 0;
+    top:0;
+    bottom:0;
+}
+#mapid{
+    width:100%;
+    height:100%;
+}
+
+.mask{
+    font-size:1rem;
+    color:black;
+    font-weight:bolder;
+    span{
+        font-weight: lighter;
+        color:white;
+    }
+}
+
+
+.leaflet-control{
+    float:right;
+}
+.leaflet-left{
+    right:0;
+}
+
+// menu
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ID-No{
+    font-size: 1.5rem;
+}
+
+.card{
+    font-size:16px;
+    padding-bottom:0px;
+}
+.card-body{
+    padding:.5rem;
+    // margin: 0px auto;
+}
+.pharmacy-name{
+    text-align: center;
+}
+@media(max-width:1024px){
+    .pharmacy3{
+        display: none;
+    }
+
+    .menu{
+        .header-content{
+            display: block;
+        }
+    }
+}
+
+@media(max-width:576px){
+    .menu{
+        font-size: 0.7rem;
+        position:static;
+        width: 100%;
+        height:auto;
+        .day{
+            font-size: 1.5rem;
+        }
+    }
+    .header-content{
+        width: 100%;
+    }
+    .card-all{
+        display: flex;
+        .pharmacy3{
+            display:inline-flex;
+        }
+    }
+    .mask{
+        font-size:.7rem;
+        color:black;
+        font-weight:bolder;
+        margin-bottom: 0.1rem;
+        span{
+            font-weight: lighter;
+            color:white;
+        }
+    }
+    #mapid{
+        height:calc(100vh - 337px);
+    }
+
+}
